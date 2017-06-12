@@ -164,7 +164,7 @@ var scripts = [
               "maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
               "cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js",
               "cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js",
-              "cdn.rawgit.com/Maxeuz/HelloWorld/master/MainScripts.js".
+              "cdn.rawgit.com/Maxeuz/HelloWorld/master/MainScripts.js",
               "netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css",
               "cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css",
               "cdn.rawgit.com/Maxeuz/HelloWorld/master/extrastyles.css"
