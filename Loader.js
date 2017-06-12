@@ -54,6 +54,11 @@ UnRest.ScriptLoader = function() {
     }
 }();
 
+function startUp()
+{
+  ExecuteOrDelayUntilScriptLoaded(init, "sp.js");
+}
+
 function init()
 {
   var popUpHTML =
@@ -148,7 +153,6 @@ function init()
                 };
 
   var dialog = SP.UI.ModalDialog.showModalDialog(options);
-
 }
 
 //main method
@@ -160,8 +164,8 @@ var scripts = [
               "cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js",
               "cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js",
               "netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css",
-              "cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css"
-
+              "cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css",
+              "cdn.rawgit.com/Maxeuz/HelloWorld/master/extrastyles.css"
             ];
 
-UnRest.ScriptLoader.asyncLoadScripts(scripts, init);
+UnRest.ScriptLoader.asyncLoadScripts(scripts, startUp);
