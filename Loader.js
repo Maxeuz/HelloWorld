@@ -26,7 +26,7 @@ UnRest.ScriptLoader = function() {
             var path = files.shift();
 
             var scriptElm;
-
+console.log(path);
             if(path.endsWith('.js'))
             {
               scriptElm = document.createElement('script');
@@ -160,13 +160,13 @@ function init()
 var scripts = [
               "code.jquery.com/jquery-2.2.4.min.js",
               "cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js",
-              "cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js",
               "maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
               "cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js",
               "cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js",
-              "cdn.rawgit.com/Maxeuz/HelloWorld/master/MainScripts.js",
               "netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css",
               "cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css",
+              "cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js",
+              "cdn.rawgit.com/Maxeuz/HelloWorld/master/MainScripts.js",
               "cdn.rawgit.com/Maxeuz/HelloWorld/master/extrastyles.css"
             ];
 
