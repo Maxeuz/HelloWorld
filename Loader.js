@@ -62,7 +62,7 @@ function startUp()
 function init()
 {
   var popUpHTML =
-  "<div id='masterContainer'></div>";
+  "<script type='https://cdn.rawgit.com/Maxeuz/HelloWorld/master/QGenMain.js'></script><link href='https://cdn.rawgit.com/Maxeuz/HelloWorld/master/QGenMain.css' rel='stylesheet' /><div id='masterContainer'></div>";
 
   var htmlElement = document.createElement('div');
   $(htmlElement).append(popUpHTML);
@@ -81,9 +81,6 @@ function init()
 }
 
 //main method
-var scripts = [
-              "cdn.rawgit.com/Maxeuz/HelloWorld/master/QGenMain.js",
-              "cdn.rawgit.com/Maxeuz/HelloWorld/master/QGenMain.css"
-            ];
+var scripts = [];
 
 UnRest.ScriptLoader.asyncLoadScripts(scripts, startUp);
