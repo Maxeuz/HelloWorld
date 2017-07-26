@@ -82,6 +82,6 @@ function init()
 
 //main method
 var scripts = [	'//cdn.rawgit.com/Maxeuz/HelloWorld/master/MainJS.js',
-		'//cdn.rawgit.com/Maxeuz/HelloWorld/master/QGenMain.css'];
+		'//cdn.rawgit.com/Maxeuz/HelloWorld/master/MainCSS.css'];
 
 UnRest.ScriptLoader.asyncLoadScripts(scripts, startUp);
