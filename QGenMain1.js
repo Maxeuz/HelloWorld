@@ -12809,7 +12809,7 @@ var camlTreeController = function() {
   //Handlers
   var attachHoverHandlers = function()
   {
-    $(document).on("mouseenter",".operator select",function()
+    $("#masterContainer").on("mouseenter",".operator select",function()
     {
       var currentNodeGuid = $(this).parent().attr("data-guid");
       var currentNode = getNode(currentNodeGuid);
@@ -12820,7 +12820,7 @@ var camlTreeController = function() {
       $(this).addClass("operatorfocus");
     });
 
-    $(document).on("mouseleave",".operator select",function()
+    $("#masterContainer").on("mouseleave",".operator select",function()
     {
       var currentNodeGuid = $(this).parent().attr("data-guid");
       var currentNode = getNode(currentNodeGuid);
@@ -12835,7 +12835,7 @@ var camlTreeController = function() {
 
   var attachValueChangeHandlers = function()
   {
-    $(document).on("change",".selectQueryColumn",function()
+    $("#masterContainer").on("change",".selectQueryColumn",function()
     {
       var currentNodeGuid = $(this).parent().attr("data-guid");
       var currentNode = getNode(currentNodeGuid);
@@ -12858,7 +12858,7 @@ var camlTreeController = function() {
 
     });
 
-    $(document).on("change",".selectQueryOperator",function()
+    $("#masterContainer").on("change",".selectQueryOperator",function()
     {
       var currentNodeGuid = $(this).parent().attr("data-guid");
       var currentNode = getNode(currentNodeGuid);
@@ -12879,7 +12879,7 @@ var camlTreeController = function() {
 
     });
 
-    $(document).on("change",".inputQueryValue",function()
+    $("#masterContainer").on("change",".inputQueryValue",function()
     {
       var currentNodeGuid = $(this).parent().attr("data-guid");
       var currentNode = getNode(currentNodeGuid);
@@ -12896,7 +12896,7 @@ var camlTreeController = function() {
 
     });
 
-    $(document).on("change",".clauseJoinOperator",function()
+    $("#masterContainer").on("change",".clauseJoinOperator",function()
     {
       var currentNodeGuid = $(this).parent().attr("data-guid");
       var currentNode = getNode(currentNodeGuid);
@@ -12908,7 +12908,7 @@ var camlTreeController = function() {
 
   var attachButtonHandlers = function()
   {
-    $(document).on("click",".addBottom",function()
+    $("#masterContainer").on("click",".addBottom",function()
     {
       var currentPadding;
       var lowestPadding = 10000;
@@ -12959,7 +12959,7 @@ var camlTreeController = function() {
 
     });
 
-    $(document).on("click",".addRight",function()
+    $("#masterContainer").on("click",".addRight",function()
     {
       var currentPadding = $(this).prev(".clauseSection").css("padding-left");
       var currentNodeID = $(this).prev(".clauseSection").attr("data-guid");
