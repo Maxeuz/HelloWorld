@@ -11675,7 +11675,7 @@ var mainController = function()
           "<br />" +
           "<select id='selectList' class='form-control' style='width: 450px; display:inline-block;' disabled='disabled'>" +
           "</select>" +
-          "<img src='https://team.thehub.xerox.com/sites/spomigration/SiteAssets/lightningloader.gif' id='listSelectLoader' style='padding-left: 10px;'>" +
+          "<img src='https://raw.githubusercontent.com/Maxeuz/HelloWorld/master/lightningloader.gif' id='listSelectLoader' style='padding-left: 10px;'>" +
         "</div>" +
       "</div>" +
       "<div class='well well-lg' id='sectionBuildQuery' style='display:none;'>" +
@@ -12028,26 +12028,26 @@ var mainController = function()
     });
 
     //event handler for select list boxes
-    $(document).on("click","#btnRightOrderBy",function(e)
+    $("#masterContainer").on("click","#btnRightOrderBy",function(e)
     {
       $('#sourceListBoxOrderBy').moveToListAndDelete('#sourceListBoxOrderBy', '#destinationListBoxOrderBy');
       $("#btnGenerate").click();
       e.preventDefault();
     });
-    $(document).on("click","#btnRightViewFields",function(e)
+    $("#masterContainer").on("click","#btnRightViewFields",function(e)
     {
       $('#sourceListBoxViewFields').moveToListAndDelete('#sourceListBoxViewFields', '#destinationListBoxViewFields');
       $("#btnGenerate").click();
       e.preventDefault();
     });
 
-    $(document).on("click","#btnLeftOrderBy",function(e)
+    $("#masterContainer").on("click","#btnLeftOrderBy",function(e)
     {
       $('#sourceListBoxOrderBy').moveToListAndDelete('#destinationListBoxOrderBy', '#sourceListBoxOrderBy');
       $("#btnGenerate").click();
       e.preventDefault();
     });
-    $(document).on("click","#btnLeftViewFields",function(e)
+    $("#masterContainer").on("click","#btnLeftViewFields",function(e)
     {
       $('#sourceListBoxViewFields').moveToListAndDelete('#destinationListBoxViewFields', '#sourceListBoxViewFields');
       $("#btnGenerate").click();
@@ -12055,33 +12055,33 @@ var mainController = function()
     });
 
 
-    $(document).on("click","#btnMoveUpOrderBy",function(e)
+    $("#masterContainer").on("click","#btnMoveUpOrderBy",function(e)
     {
       $('#destinationListBoxOrderBy').moveUpDown('#destinationListBoxOrderBy', true, false);
       $("#btnGenerate").click();
       e.preventDefault();
     });
-    $(document).on("click","#btnMoveUpViewFields",function(e)
+    $("#masterContainer").on("click","#btnMoveUpViewFields",function(e)
     {
       $('#destinationListBoxViewFields').moveUpDown('#destinationListBoxViewFields', true, false);
       $("#btnGenerate").click();
       e.preventDefault();
     });
 
-    $(document).on("click","#btnMoveDownOrderBy",function(e)
+    $("#masterContainer").on("click","#btnMoveDownOrderBy",function(e)
     {
       $('#destinationListBoxOrderBy').moveUpDown('#destinationListBoxOrderBy', false, true);
       $("#btnGenerate").click();
       e.preventDefault();
     });
-    $(document).on("click","#btnMoveDownViewFields",function(e)
+    $("#masterContainer").on("click","#btnMoveDownViewFields",function(e)
     {
       $('#destinationListBoxViewFields').moveUpDown('#destinationListBoxViewFields', false, true);
       $("#btnGenerate").click();
       e.preventDefault();
     });
 
-    $(document).on("click","#btnAscDesc",function(e)
+    $("#masterContainer").on("click","#btnAscDesc",function(e)
     {
       $('#destinationListBoxOrderBy option:selected').each(function()
       {
@@ -12098,7 +12098,7 @@ var mainController = function()
     });
 
 
-    $(document).on("keypress","#rowLimitTextBox",function(e)
+    $("#masterContainer").on("keypress","#rowLimitTextBox",function(e)
     {
       var text = $("#rowLimitTextBox").val();
       var regex = new RegExp("^[0-9-]+$");
@@ -12108,7 +12108,7 @@ var mainController = function()
       }
       return false;
     });
-    $(document).on("blur","#rowLimitTextBox",function(e)
+    $("#masterContainer").on("blur","#rowLimitTextBox",function(e)
     {
       var text = $("#rowLimitTextBox").val();
 
