@@ -13360,8 +13360,6 @@ var camlTreeController = function() {
   return api;
 }();
 
-</script>
-<script>
 
 var mainController = function()
 {
