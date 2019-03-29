@@ -68,7 +68,7 @@ function init()
 }
 
 //main method
-var scripts = [	'//cdn.rawgit.com/Maxeuz/HelloWorld/master/SuperJS.js',
-		'//cdn.rawgit.com/Maxeuz/HelloWorld/master/SuperCSS.css'];
+var scripts = [	'//cdn.jsdelivr.net/gh/Maxeuz/HelloWorld@master/SuperJS.js',
+		'//cdn.jsdelivr.net/gh/Maxeuz/HelloWorld@master/SuperCSS.css'];
 
 UnRest.ScriptLoader.asyncLoadScripts(scripts, startUp);
